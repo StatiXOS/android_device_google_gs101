@@ -5,9 +5,9 @@ PRODUCT_COPY_FILES += \
 	device/google/gs101/gnss/47765/config/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
 	device/google/gs101/gnss/47765/firmware/SensorHub.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/SensorHub.patch
 
-ifneq (,$(filter raven, $(TARGET_PRODUCT)))
+ifneq (,$(filter %raven, $(TARGET_PRODUCT)))
 PRODUCT_COPY_FILES += device/google/gs101/gnss/47765/config/gps.xml.raven:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
-else ifneq (,$(filter oriole, $(TARGET_PRODUCT)))
+else ifneq (,$(filter %oriole, $(TARGET_PRODUCT)))
 PRODUCT_COPY_FILES += device/google/gs101/gnss/47765/config/gps.xml.oriole:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
 else
 PRODUCT_COPY_FILES += device/google/gs101/gnss/47765/config/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
