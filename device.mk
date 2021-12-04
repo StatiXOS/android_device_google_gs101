@@ -151,7 +151,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	vendor/arm/mali/valhall/libmali \
 	vendor/arm/mali/valhall/cinstr/production/gpu-hwc-reader
 
-include device/google/gs101/neuralnetwork/neuralnetwork.mk
+#include device/google/gs101/neuralnetwork/neuralnetwork.mk
 
 PRODUCT_PACKAGES += \
 	libGLES_mali \
