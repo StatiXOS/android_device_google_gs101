@@ -154,8 +154,6 @@ PRODUCT_PACKAGES += \
 	vulkan.gs101 \
 	libOpenCL \
 	libgpudataproducer
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	debug.mali.disable_backend_affinity=true
 
 ifeq ($(USE_SWIFTSHADER),true)
 PRODUCT_PACKAGES += \
