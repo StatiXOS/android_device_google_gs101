@@ -134,6 +134,7 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 ifneq ($(PRODUCT_BUILD_PVMFW_IMAGE),false)
 BOARD_AVB_VBMETA_SYSTEM += pvmfw
+AB_OTA_PARTITIONS += pvmfw
 endif
 
 # Enable chained vbmeta for boot images
